@@ -45,3 +45,8 @@ SELECT `name`, `surname`, `date_of_birth`
 FROM `students`
 WHERE YEAR(`date_of_birth`) < 1991 
 
+-- 4) Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)
+
+SELECT `period`, `year`
+FROM `courses`
+WHERE `period` = "I semestre" AND `year`= 1;
