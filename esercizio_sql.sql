@@ -1,3 +1,5 @@
+-- ESERCIZI CON GROUP BY
+
 -- ? 1) Contare quanti iscritti ci sono stati ogni anno
 
 SELECT COUNT(*) AS 'iscritti_per_anno',  YEAR(`enrolment_date`) AS `year`
@@ -21,3 +23,12 @@ GROUP BY `exam_id`
 SELECT COUNT(*) AS 'corsi_di_laurea', `department_id`
 FROM `degrees`
 GROUP BY `department_id`;
+
+
+-- ESERCIZI CON SELECT
+
+-- 1. Selezionare tutti gli studenti nati nel 1990 (160)
+
+SELECT * 
+FROM `students` 
+WHERE YEAR(`date_of_birth`) = 1990;
